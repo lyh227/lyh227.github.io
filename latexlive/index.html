@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="editormd/css/editormd.css" />
+<div id="test-editor">
+	<textarea rows="20" cols="20" id="program"></textarea>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" > 
+<link rel="stylesheet" href="editormd/css/editormd.css" >
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" ></script> 
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<link rel="stylesheet" href="editormd/examples/css/style.css" />
+<link rel="stylesheet" href="editormd/css/editormd.preview.css" />
+
+<script src="editormd/examples/js/jquery.min.js"></script>
+<script src="editormd/lib/marked.min.js"></script>
+<script src="editormd/lib/prettify.min.js"></script>
+<script src="editormd/lib/raphael.min.js"></script>
+<script src="editormd/lib/underscore.min.js"></script>
+<script src="editormd/lib/sequence-diagram.min.js"></script>
+<script src="editormd/lib/flowchart.min.js"></script>
+<script src="editormd/lib/jquery.flowchart.min.js"></script>
+<script src="editormd/editormd.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var editor = editormd("test-editor",{
+            theme                : "",             // Editor.md self themes, before v1.5.0 is CodeMirror theme, 
+            editorTheme          : "default",      // Editor area, this is CodeMirror theme at v1.5.0
+            previewTheme         : "",             // Preview area theme, default empty 
+            width                : "100%",
+            height               : "100%",
+            path                 : "editormd/lib/",       // Dependents module file directory
+            pluginPath           : "",             // If this empty, default use settings.path + "../plugins/"
+            delay                : 300,            // Delay parse markdown to html, Uint : ms
+            autoLoadModules      : true,           // Automatic load dependent module files
+            watch                : true,
+            placeholder          : "Enjoy Markdown! coding now...",
+            gotoLine             : true,           // Enable / disable goto a line
+            codeFold             : false,
+            autoHeight           : false,
+            autoFocus            : true,           // Enable / disable auto focus editor left input area
+            autoCloseTags        : true,
+            searchReplace        : true,           // Enable / disable (CodeMirror) search and replace function
+            syncScrolling        : true,           // options: true | false | "single", default true
+            saveHTMLToTextarea   : false,          // If enable, Editor will create a <textarea name="{editor-id}-html-code"> tag save HTML code for form post to server-side.
+            onload               : function() {},
+            onresize             : function() {},
+            onchange             : function() {},
+            onwatch              : null,
+            onunwatch            : null,
+            onpreviewing         : function() {},
+            onpreviewed          : function() {},
+            onfullscreen         : function() {},
+            onfullscreenExit     : function() {},
+            onscroll             : function() {},
+            onpreviewscroll      : function() {},
+
+            imageUpload          : false,          // Enable/disable upload
+            imageFormats         : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+            imageUploadURL       : "",             // Upload url
+            crossDomainUpload    : false,          // Enable/disable Cross-domain upload
+            uploadCallbackURL    : "",             // Cross-domain upload callback url
+
+            emoji                : true,          // :emoji: , Support Github emoji, Twitter Emoji (Twemoji);
+            // Support FontAwesome icon emoji :fa-xxx: > Using fontAwesome icon web fonts;
+            // Support Editor.md logo icon emoji :editormd-logo: :editormd-logo-1x: > 1~8x;
+            tex                  : true,          // TeX(LaTeX), based on KaTeX
+            flowChart            : true,          // flowChart.js only support IE9+
+            sequenceDiagram      : true,          // sequenceDiagram.js only support IE9+
+            previewCodeHighlight : true,           // Enable / disable code highlight of editor preview area
+
+            toolbar              : true,           // show or hide toolbar
+            toolbarAutoFixed     : true,           // on window scroll auto fixed position
+            toolbarIcons         : "full",         // Toolbar icons mode, options: full, simple, mini, See `editormd.toolbarModes` property.
+            toolbarTitles        : {},
+            katexURL             : {
+                css : "katex.min",
+                js  : "katex.min"
+            },
+            toolbarHandlers      : {
+                ucwords : function() {
+                    return editormd.toolbarHandlers.ucwords;
+                },
+                lowercase : function() {
+                    return editormd.toolbarHandlers.lowercase;
+                } 
+            }
+        });
+    });
+</script>
