@@ -109,7 +109,7 @@ long long merge(long long x,long long y)
 	lh[lh[x].rs].fa=x;
 	if(lh[lh[x].ls].dis<lh[lh[x].rs].dis) swap(lh[x].ls,lh[x].rs);
 	lh[x].dis=lh[lh[x].rs].dis+1;
-	fa[lh[x].ls]=fa[lh[x].rs]=fa[x]=x;\\并查集
+	fa[lh[x].ls]=fa[lh[x].rs]=fa[x]=x;//并查集
 	return x;
 }
 ```
@@ -156,7 +156,7 @@ long long merge(long long x,long long y)
 	lh[x].rs=merge(lh[x].rs,y);
 	lh[lh[x].rs].fa=x;
 	if(rand()%2==1) swap(lh[x].ls,lh[x].rs);
-	fa[lh[x].ls]=fa[lh[x].rs]=fa[x]=x;\\并查集
+	fa[lh[x].ls]=fa[lh[x].rs]=fa[x]=x;//并查集
 	return x;
 }
 ```
