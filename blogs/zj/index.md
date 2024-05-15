@@ -21,6 +21,9 @@
     }
 </style>
 <div class="button-column">
-<a href="zj/index.html"><button>各式各样的总结</button></a>
+<a href="fftzj/index.html"><button>fft总结</button></a>
+<a href="kbdzj/index.html"><button>可并堆总结</button></a>
+<a href="mbwshszj/index.html"><button>莫比乌斯函数总结</button></a>
+<a href="olhszj/index.html"><button>欧拉函数总结</button></a>
 <a href="../index.html"><button>上一页</button></a>
 </div>

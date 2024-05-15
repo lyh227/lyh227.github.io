@@ -32,7 +32,7 @@ $$(a_0,a_1,a_2...,a_n)$$
 ### 定义
 对于方程 $x^n=1$，它的解就相当于复平面上单位圆上的 $n$ 个 $n$ 等分点，如当 $n=3$ 时
 
-<img src="../../img/fft.png">
+![](https://cdn.luogu.com.cn/upload/image_hosting/8jr5va83.png)
 
 图中 $A_1,A_2,A_3$ 三点即为 $x^3=1$ 的解
 
