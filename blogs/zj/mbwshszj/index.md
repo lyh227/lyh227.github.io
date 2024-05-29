@@ -145,5 +145,19 @@ void shai(long long n)
     }
 }
 ```
-
+<script src="https://giscus.app/client.js"
+        data-repo="lyh227/lyh227.github.io"
+        data-repo-id="R_kgDOLy9wWQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOLy9wWc4CfrdI"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
 <a href="../index.html"><button>上一页</button></a>
